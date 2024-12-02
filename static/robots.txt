@@ -1,0 +1,3 @@
+# 拒绝所有搜索爬虫
+User-agent: *
+Disallow: /
