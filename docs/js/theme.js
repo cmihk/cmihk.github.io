@@ -154,25 +154,177 @@ document.addEventListener('DOMContentLoaded', function() {
   // 文章页的样式表
 
   // 判断当前页面是否为文章页
-  /*else if (
+  else if (
     currentUrl.includes('/post/') || 
     currentUrl.includes('/link.html') || 
     currentUrl.includes('/about.html')
   ) {
     let style = document.createElement('style');
     style.innerHTML = `
+
+      /* 以下是原版样式 */
+      /* 来源：templates/post.html */
+      .postTitle {
+        margin: auto 0;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .title-right {
+        display: flex;
+        margin: auto 0 0 auto;
+      }
+
+      .title-right .circle {
+        padding: 14px 16px;
+        margin-right: 8px;
+      }
+
+      #postBody {
+        border-bottom: 1px solid var(--color-border-default);
+        padding-bottom: 36px;
+      }
+
+      #postBody hr {
+        height: 2px;
+      }
+
+      #cmButton {
+        height: 48px;
+        margin-top: 48px;
+      }
+
+      #comments {
+        margin-top: 64px;
+      }
+
+      .g-emoji {
+        font-size: 24px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 8px;
+        }
+
+        .postTitle {
+          font-size: 24px;
+        }
+      }
+
+      .copy-feedback {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        color: var(--color-fg-on-emphasis);
+        background-color: var(--color-fg-muted);
+        border-radius: 3px;
+        padding: 5px 8px;
+        font-size: 12px;
+      }
     `;
     document.head.appendChild(style);
-  }*/
+  }
 
   // 搜索页的样式表
 
   // 判断当前页面是否为搜索页
   else if (currentUrl.includes('/tag')) {
-    /*let style = document.createElement('style');
+    let style = document.createElement('style');
     style.innerHTML = `
+
+      /* 以下是原版样式 */
+      /* 来源：templates/tag.html */
+      .tagTitle {
+        margin: auto 0;
+        font-size: 40px;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .title-right {
+        display: flex;
+        margin: auto 0 0 auto;
+      }
+
+      .title-right .circle {
+        padding: 14px 16px;
+        margin-right: 8px;
+      }
+
+      .subnav-search {
+        width: 222px;
+        margin-top: 8px;
+        margin-right: 8px;
+      }
+
+      .subnav-search-input {
+        width: 160px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .subnav-search button {
+        padding: 5px 8px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+
+      .SideNav-icon {
+        margin-right: 16px
+      }
+
+      .Label {
+        color: #fff;
+        margin-left: 4px;
+      }
+
+      #taglabel .Label {
+        margin-bottom: 8px;
+      }
+
+      .Counter {
+        color: #fff;
+        background-color: rgba(234, 238, 242, 0.5)
+      }
+
+      .genTime {
+        float: right;
+      }
+
+      .d-flex {
+        min-width: 0;
+      }
+
+      .listTitle {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+
+      .listLabels {
+        white-space: nowrap;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 8px;
+        }
+
+        .tagTitle {
+          display: none;
+        }
+
+        .LabelTime {
+          display: none;
+        }
+      }
     `;
-    document.head.appendChild(style);*/
+    document.head.appendChild(style);
 
     // 搜索框回车触发搜索
     let input = document.getElementsByClassName('form-control subnav-search-input float-left')[0];
