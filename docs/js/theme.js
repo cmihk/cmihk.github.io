@@ -67,6 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
         margin-left: 8px;
       }
 
+      a.blogTitle {
+        color: inherit;
+        text-decoration: none;
+        vertical-align: bottom;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Monaco;
+        margin-left: 8px;
+      }
+
       .title-right {
         display: flex;
         margin: auto 0 0 auto;
