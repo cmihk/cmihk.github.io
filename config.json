@@ -17,5 +17,5 @@
     "bottomText":"❤️ 转载请注明出处，谢谢！❤️",
     "allHead":"<script src='/js/vercount.js'></script>",
     "script":"<script>document.getElementById('cmButton').click();</script>",
-    "indexStyle":"#header{display:flex;gap:10px;flex-direction:column;align-items:center;}h1{gap:15px;align-items:center;flex-direction:column;display:flex;}@media (max-width:600px){.avatar{width:64px;height:64px;}}@media (max-width:600px){.blogTitle{display:block;}}#header h1 a{font-size:35px;}.title-right{margin:0 0 0 0;}"
+    "indexStyle":"<style>#header{display:flex;gap:10px;flex-direction:column;align-items:center;}h1{gap:15px;align-items:center;flex-direction:column;display:flex;}@media (max-width:600px){.avatar{width:64px;height:64px;}}@media (max-width:600px){.blogTitle{display:block;}}#header h1 a{font-size:35px;}.title-right{margin:0 0 0 0;}</style>"
 }
