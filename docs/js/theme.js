@@ -148,6 +148,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     `;
+
+    // 添加style样式标签
     document.head.appendChild(style);
   }
 
@@ -224,6 +226,8 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 12px;
       }
     `;
+
+    // 添加style样式标签
     document.head.appendChild(style);
   }
 
@@ -324,6 +328,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     `;
+
+    // 添加style样式标签
     document.head.appendChild(style);
 
     // 搜索框回车触发搜索
