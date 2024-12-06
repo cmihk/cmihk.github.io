@@ -39,18 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
       [data-color-mode=light][data-light-theme=dark_dimmed]::selection,
       [data-color-mode=dark][data-dark-theme=dark_dimmed],
       [data-color-mode=dark][data-dark-theme=dark_dimmed]::selection
-        --SideNav-item1-bgColor: #f6f8fa; /* 亮主题下悬停背景设置为红色 */
+        --SideNav-item-hover-bgColor: #f6f8fa;
       }
 
       :root {
-        --SideNav-item1-bgColor: #2d333b; /* 默认背景色，适配其他情况 */
+        --SideNav-item-hover-bgColor: #2d333b;
       }
 
       .SideNav-item:hover {
         transform: scale(1.01);
         transition: 0.1s;
         box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
-        background-color: var(--SideNav-item1-bgColor, var(--color-canvas-subtle));
+        background-color: var(--SideNav-item-hover-bgColor, var(--color-canvas-subtle));
       }
 
       @media (max-width: 600px) {
