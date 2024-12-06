@@ -39,17 +39,17 @@ document.addEventListener('DOMContentLoaded', function() {
       [data-color-mode=light][data-light-theme=dark]::selection,
       [data-color-mode=dark][data-dark-theme=dark],
       [data-color-mode=dark][data-dark-theme=dark]::selection {
-	      --SideNav-item:hover-bgColor: #f6f8fa;/* 增加 */
+	      --Side-item-bgColor: #f6f8fa;/* 增加 */
       }
       :root {
-        --SideNav-item:hover-bgColor: #2d333b;/* 增加 */
+        --Side-item-bgColor: #2d333b;/* 增加 */
       }
 
       .SideNav-item:hover {
         transform: scale(1.01);
         transition: 0.1s;
         box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
-        background-color: var(--SideNav-item:hover-bgColor, var(--color-canvas-subtle));
+        background-color: var(--Side-item-bgColor, var(--color-canvas-subtle));
       }
 
       @media (max-width: 600px) {
