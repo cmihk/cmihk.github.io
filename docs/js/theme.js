@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         gap: 10px;
       }
 
-      #header h1 a {
-        font-size: 35px;
-      }
-
-      h1 {
+      #header h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+      }
+
+      #header h1 a {
+        font-size: 35px;
       }
 
       .title-right {
