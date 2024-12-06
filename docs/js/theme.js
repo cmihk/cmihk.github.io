@@ -35,14 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
         margin: 0;
       }
 
-      [data-color-mode=light][data-light-theme=dark],
-      [data-color-mode=light][data-light-theme=dark]::selection {
+      [data-color-mode=light][data-light-theme=dark_dimmed],
+      [data-color-mode=light][data-light-theme=dark_dimmed]::selection,
+      [data-color-mode=dark][data-dark-theme=dark_dimmed],
+      [data-color-mode=dark][data-dark-theme=dark_dimmed]::selection
         --SideNav-item1-bgColor: #f6f8fa; /* 亮主题下悬停背景设置为红色 */
-      }
-
-      [data-color-mode=dark][data-dark-theme=dark],
-      [data-color-mode=dark][data-dark-theme=dark]::selection {
-        --SideNav-item1-bgColor: #2d333b; /* 暗主题下悬停背景设置为蓝色 */
       }
 
       :root {
