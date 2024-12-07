@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
     currentUrl.includes('/link.html') || 
     currentUrl.includes('/about.html')
   ) {
-    console.log('文章页样式');
     let style = document.createElement('style');
     style.innerHTML = `
 
@@ -134,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
         background-size: 0 2px;
         transition: all 0.25s ease;
         -webkit-transition: all 0.25s ease;
+        var(--fgColor-accent, var(--color-accent-fg));
       }
 
       .markdown-body a:hover {
