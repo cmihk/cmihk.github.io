@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 判断当前页面是否为主页
   if (
-    currentUrl = '/' || 
+    currentUrl === '/' || 
     currentUrl.includes('/index.html') || 
     currentUrl.includes('/page')
   ) {
