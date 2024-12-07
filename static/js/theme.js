@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     currentUrl.includes('/link.html') || 
     currentUrl.includes('/about.html')
   ) {
+    console.log('文章页样式');
     let style = document.createElement('style');
     style.innerHTML = `
 
