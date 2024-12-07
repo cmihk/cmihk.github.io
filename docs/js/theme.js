@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
         background-size: 0 2px;
         transition: all 0.25s ease;
         -webkit-transition: all 0.25s ease;
-        var(--color-accent-fg, var(--fgColor-accent));
+        color: var(--fgColor-accent, var(--color-accent-fg));
       }
 
       .markdown-body a:hover {
